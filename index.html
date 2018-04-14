@@ -1,11 +1,116 @@
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
     <script url="js/script.js"></script>
     <title>Sophie Roussel</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="page-header col-lg-12 title">
+            <h1> <span class="glyphicon glyphicon-calendar" ></span> Prenez un rendez-vous dès maintenant ! </h1>
+            
+        </header>
+        <section class="col-lg-12 texte">
+            <p> Contactez moi ! Osez ! Notre 1er contact sera l’occasion d’une rencontre qui nous permettra de faire connaissance,
+                de discuter de votre projet, qui vous permettra de découvrir ce que je propose, ma manière de travailler.
+            </p>
+        </section>
+
+
+        <section class="col-lg-12">
+            <blockquote>
+                «Espérer en l’élève, c’est croire en son avenir» <br>
+                <small class="pull-left">Paul Malartre </small> 
+            </blockquote>
+
+            <div class="jumbotron">
+                <img src="image/portrait.png" class="img-circle" alt="Responsive image">
+                <h1 class="display-4">Sophie Roussel</h1>
+                <h2>Coach professionnelle certifiée RNCP niveau 1</h2>
+                <p class="lead">Je suis développeur des possibles : nous dessinons ensemble votre avenir professionnel, personnel pour
+                    que vous osiez l’envisager, le penser , le repenser, le réaliser.</p>
+                <hr class="my-4">
+                <p>Dates disponibles</p>
+                <p>23 Avril - 25 Mai - 23 Février - 25 Mars </p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg bouton" href="#" role="button">Voir les autres dates</a>
+                </p>
+                
+                <p>1er entretien de rencontre (offert).<br>
+                    Tarifs en fonction de votre demande, de votre objectif.</p>
+            </div>
+
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="prenom" class="form-control" id="prenom" placeholder="Votre prénom">
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="nom" class="form-control" id="nom" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" placeholder="monadresse@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Numéro de téléphone:</label>
+                    <input type="numero" class="form-control" id="numero">
+                </div>
+                <div class="form-group">
+                    <label for="statut">Vous etes:</label>
+                    <select class="form-control" id="statut">
+                        <option>Elève</option>
+                        <option>Enseignant</option>
+                        <option>Parent</option>
+                    </select>
+                </div>
+               
+
+                <button type="submit" class="btn btn-primary">Confirmer</button>
+            </form>
+
+        </section>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
