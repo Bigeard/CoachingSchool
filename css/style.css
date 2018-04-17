@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow:hidden;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.work {
+    width: 100%;
+}
+
+.profil {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.head {
+    border-radius: 50%;
+    width: 150px;
+    border: 1px solid #ffffff;
+}
+
+.name {
+    color: #6666ff;
+    padding-top: 5px;
+    font-size: 25px;
+
+}
+
+.profil:hover {text-decoration: none; }
+
+
+.pdf {
+    width: 100%;
+    height: 100%;
+}
+.background {
+    padding: 100px;
+    background-image: url("../img/work.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
