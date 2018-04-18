@@ -3,43 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <script url="js/script.js"></script>
+    <script src="js/script.js"></script>
     <title>Sophie Roussel</title>
     <link rel="icon" href="img/favicon.ico" />
+    <link href='css/animate.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- ******************** MENU ******************** -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <img src="img/logo.png" alt="logo" class="logo">
+
+        <a href="#Acceuil">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Acceuil">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#Qui_suis-je_?">Qui suis-je ?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!-- ******************** PHOTO ******************** -->
 
-
-    <div class="background">
+    <div id="Acceuil" class="background">
         <a href="pdf.html" class="profil">
-            <img src="img/head.png" alt="head" class="head">
-            <p class="name">Sophie Roussel</p>
+            <img src="img/portrait.png" alt="head" class="head">
+            <h1 class="name">Sophie Roussel</h1>
         </a>
     </div>
+
+    <!-- ******************** QUI SUIS-JE ? ******************** -->
+
+    <div id="Qui_suis-je_?" class="jumbotron">
+        <h2>Qui suis-je ?</h2>
+        <hr class="my-4">
+        <h4>COACH PROFESSIONNELLE CERTIFIÉE RNCP 1 ET FORMATRICE </h4>
+        <p>Je propose un accompagnement personnalisé à chaque personne qui souhaite se donner de nouveaux objectifs, se retrouver.</p>
+        <hr class="my-4">
+        <h4>MON PARCOURS</h4>
+        <p>Forte de 20 ans d’enseignement et de direction d’un collège, je sais combien nos jeunes mais aussi ceux qui les entourent,
+            les encadrent : parents et enseignants ont besoin de se comprendre, de mieux se connaitre et se reconnaitre..
+            J’ai pendant ces années découvert la « génération Z », le stress des parents et des enseignants... l’envie toujours
+            de réussir mais la peur de se tromper ou de décevoir. Peur d’oser.</p>
+        <hr class="my-4">
+        <h4>MA MISSION</h4>
+        <p>Permettre à chacun de passer à l’action et de se réaliser au niveau personnel ou professionnel. Faciliter la prise
+            de décision. Accepter l’erreur sans pour autant vivre un échec.
+        </p>
+        <hr class="my-4">
+        <h4>CE EN QUOI JE CROIS</h4>
+        <p>Je crois en l’être humain et en sa faculté de réussir sa vie, que nos jeunes ont besoin de nous pour grandir et cheminer
+            sereinement. Je pense que parents et enseignants sont leurs piliers et de vrais exemples... les parents par amour,
+            les enseignants par leur professionnalisme.</p>
+        <a class="button btn btn-primary btn-lg" href="#" role="button">Voir mon CV</a>
+    </div>
+
+    <!-- ******************** CONTACT ******************** -->
+
+    <div id="Contact" class="jumbotron">
+        <h2 class="display-6">Contact</h2>
+        <hr class="my-4">
+        <!-- ******************** DIV1 ******************** -->
+        <div class="div1" id="div1">
+            <h4 class="text fadeInDown animated text-center">Qui etes-vous ?</h4>
+            <p class="text fadeInDown animated">Non :</p>
+            <input type="text" id="lastName" class="input fadeInDown animated" placeholder="Jhon" required></input>
+            <p class="text fadeInDown animated">Prénom :</p>
+            <input type="text" id="firstName" class="input fadeInDown animated" placeholder="Bigeard" required></input>
+            <p class="text fadeInDown animated">Email :</p>
+            <input type="mail" id="Email" class="input fadeInDown animated" placeholder="exemple@mail.com" required></input>
+            <br>
+            <br>
+            <input class="button fadeInDown animated btn btn-primary col-6" type="button" onclick="onClickLogin()" value="SUIVANT" />
+        </div>
+        <!-- ******************** DIV2 ******************** -->
+        <div class="div2" id="div2">
+            <i class="fa fa-arrow-left" aria-hidden="true" onclick="onClickBack()"></i>
+
+            <div class="row">
+                <a href="#div3" class="button col-md-3">
+                    <input class="fadeInDown animated btn btn-primary" type="button" onclick="onClickContact()" value="Prise de contact" />
+                </a>
+                <a href="#div4" class="button col-md-3">
+                    <input class="fadeInDown animated btn btn-primary" type="button" onclick="onClickAppointment()" value="Rendez-vous" />
+                </a>
+            </div>
+        </div>
+        <!-- ******************** DIV3 ******************** -->
+        <div class="div3" id="div3">
+            <br>
+            <br>
+            <label for="Objet" class="fadeInDown animated">Objet :</label>
+            <input type="text" class="form-control fadeInDown animated" id="Objet" placeholder="Objet">
+            <br>
+            <div class="form-group">
+                <label for="Objet">Text :</label>
+                <textarea class="form-control fadeInDown animated" id="Objet" rows="10"></textarea>
+            </div>
+        </div>
+        <!-- ******************** DIV4 ******************** -->
+        <div class="div4" id="div4">
+            <br>
+            <br>
+            <iframe src="https://calendar.google.com/calendar/embed?title=Agenda%20pro&amp;showTitle=0&amp;showNav=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=psjqfd15aeglenbdqt8uo763oc%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=Europe%2FParis"
+                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <input id="send" class="fadeInDown animated btn btn-primary col-6" type="button" onclick="onClickSend()" value="ENVOYER" />
+
+    </div>
+
+    <!-- ******************** FOOTER ******************** -->
+
+    <footer id="footer">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <p>- Sophie ROUSSEL - 06 10 40 03 19 - sophie.rousselcoach79@gmail.com -</p>
+            <a href="#" class="twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="google">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </div>
+    </footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
