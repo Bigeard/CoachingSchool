@@ -297,3 +297,29 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   opacity:0.5;
   color: #40224C !important;
 }
+
+/* Collapse -------------------------- */
+
+.card-header {
+  text-align: center;
+  background-color: #40224C !important;
+}
+
+.btn-link {
+  color: #ffffff !important;
+}
+
+.card {
+
+
+}
+
+.n1 {
+  margin-right: 60%;
+  margin-left: 10%;
+}
+
+.n2 {
+  margin-left: 60%;
+  margin-right: 10%;
+}
