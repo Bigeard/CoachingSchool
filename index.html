@@ -75,7 +75,7 @@
         <p>Je crois en l’être humain et en sa faculté de réussir sa vie, que nos jeunes ont besoin de nous pour grandir et cheminer
             sereinement. Je pense que parents et enseignants sont leurs piliers et de vrais exemples... les parents par amour,
             les enseignants par leur professionnalisme.</p>
-        <a class="button btn btn-primary btn-lg" href="#" role="button">Voir mon CV</a>
+        <a class="button btn btn-lg" href="#" role="button">Voir mon CV</a>
     </div>
 
     <!-- ******************** CONTACT ******************** -->
@@ -86,24 +86,53 @@
         <!-- ******************** DIV1 ******************** -->
         <div class="div1" id="div1">
             <h4 class="text fadeInDown animated text-center">Qui etes-vous ?</h4>
-            <p class="text fadeInDown animated">Non :</p>
-            <input type="text" id="lastName" class="input fadeInDown animated" placeholder="Jhon" required></input>
-            <p class="text fadeInDown animated">Prénom :</p>
-            <input type="text" id="firstName" class="input fadeInDown animated" placeholder="Bigeard" required></input>
-            <p class="text fadeInDown animated">Email :</p>
-            <input type="mail" id="Email" class="input fadeInDown animated" placeholder="exemple@mail.com" required></input>
             <br>
             <br>
-            <input class="button fadeInDown animated btn btn-primary col-6" type="button" onclick="onClickLogin()" value="SUIVANT" />
+            <form>
+
+<div class="GlobalGroup">
+
+   <div class="group">
+     <input type="text" required>
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Nom</label>
+   </div>
+
+   <div class="group">
+     <input type="text" required>
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Prénom</label>
+   </div>
+
+   <div class="group">
+     <input type="text" required>
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Email</label>
+   </div>
+
+   <div class="group">
+     <input type="text" required>
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Numéro de téléphone</label>
+   </div>
+
+</div>
+ </form>
+        <a class="button fadeInDown animated btn col-6" role="button" onclick="onClickLogin()" >SUIVANT</a>
+
         </div>
         <!-- ******************** DIV2 ******************** -->
         <div class="div2" id="div2">
             <i class="fa fa-arrow-left" aria-hidden="true" onclick="onClickBack()"></i>
 
             <div class="row">
-                <a href="#div3" class="button col-md-3">
-                    <input class="fadeInDown animated btn btn-primary" type="button" onclick="onClickContact()" value="Prise de contact" />
-                </a>
+
+                    <a class="button col-md-3" role="button" onclick="onClickContact()" value="Prise de contact"></a>
+
                 <a href="#div4" class="button col-md-3">
                     <input class="fadeInDown animated btn btn-primary" type="button" onclick="onClickAppointment()" value="Rendez-vous" />
                 </a>
@@ -137,7 +166,6 @@
 
     <footer id="footer">
         <div class="container">
-            
             <p>- Sophie ROUSSEL - 06 10 40 03 19 - sophie.rousselcoach79@gmail.com -</p>
             <a href="#" class="twitter">
                 <i class="fa fa-twitter"></i>
