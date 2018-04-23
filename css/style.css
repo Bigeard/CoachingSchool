@@ -45,12 +45,6 @@ html, body {
     font-size: 45px;
 }
 
-.name:hover {
-    color: rgb(199, 199, 199);
-}
-
-.profil:hover {text-decoration: none;  }
-
 h2{
    color: #40224C !important;
    font-weight: bold !important;
@@ -303,19 +297,4 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 .btn-link {
   color: #ffffff !important;
-}
-
-.card {
-
-
-}
-
-.n1 {
-  margin-right: 60%;
-  margin-left: 10%;
-}
-
-.n2 {
-  margin-left: 60%;
-  margin-right: 10%;
 }

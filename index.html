@@ -7,17 +7,18 @@
   <title>Sophie Roussel</title>
   <link rel="icon" href="img/favicon.ico" />
   <link href='css/animate.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
 
 </head>
 
-<body>
+<body onscroll="onScroll()">
 
   <!-- ******************** MENU ******************** -->
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +32,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#Accueil">Accueil</a>
+          <a class="nav-link" href="#Accueil" >Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Qui_suis-je_?">Qui suis-je ?</a>
+          <a class="nav-link" href="#Qui_suis-je_?" >Qui suis-je ?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Agenda">Agenda</a>
@@ -49,10 +50,10 @@
   <!-- ******************** PHOTO ******************** -->
 
   <div id="Accueil" class="background">
-    <a href="#" class="profil">
+    <div class="profil">
       <img src="img/portrait.png" alt="head" class="head">
       <h1 class="name">Sophie Roussel</h1>
-    </a>
+    </div>
   </div>
 
   <!-- ******************** QUI SUIS-JE ? ******************** -->
@@ -78,104 +79,110 @@
     <p>Je crois en l’être humain et en sa faculté de réussir sa vie, que nos jeunes ont besoin de nous pour grandir et cheminer
       sereinement. Je pense que parents et enseignants sont leurs piliers et de vrais exemples... les parents par amour,
       les enseignants par leur professionnalisme.</p>
+      <br>
+      <br>
     <a class="button btn btn-lg" href="pdf.html" role="button">Voir mon CV</a>
   </div>
 
-  <div class="n1">
-    <div class="accordion" id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Pour les établissements scolaires
-            </button>
-          </h5>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="accordion" id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Pour les établissements scolaires
+                </button>
+              </h5>
+            </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Journées pédagogiques : thème de travail et objectifs fixés par le chef d’établissement
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Journées pédagogiques : thème de travail et objectifs fixés par le chef d’établissement
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Pour les élèves à partir de 14 ans
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Aide à l’orientation, méthodologie, gestion du stress, estime de soi, motivation... Le métier d’élève : Qu’attend-on de moi
+                ? Mon projet ?
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  Pour les parents
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Vous donner confiance dans les choix de vos enfants, retrouver la sérénité, découvrir le potentiel de vos enfants, les rassurer
+                et les écouter
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-              aria-controls="collapseTwo">
-              Pour les élèves à partir de 14 ans
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            Aide à l’orientation, méthodologie, gestion du stress, estime de soi, motivation... Le métier d’élève : Qu’attend-on de moi
-            ? Mon projet ?
+      <div class="col-sm">
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                Pour les enseignants
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              Comprendre les nouveaux élèves, adopter une posture d’écoute, travailler en équipe les nouveaux projets, anticiper les changements,
+              gérer les émotions, le stress...
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-              aria-controls="collapseThree">
-              Pour les parents
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Vous donner confiance dans les choix de vos enfants, retrouver la sérénité, découvrir le potentiel de vos enfants, les rassurer
-            et les écouter
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                Pour les entrepreneurs, managers, personnes en reconversion
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              Vous posez votre demande, nous éclaircissons ensemble vos objectifs et les moyens de les atteindre.
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="n2">
-    <div class="card">
-      <div class="card-header" id="headingFour">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-            aria-controls="collapseFour">
-            Pour les enseignants
-          </button>
-        </h5>
-      </div>
-      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-        <div class="card-body">
-          Comprendre les nouveaux élèves, adopter une posture d’écoute, travailler en équipe les nouveaux projets, anticiper les changements,
-          gérer les émotions, le stress...
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingFive">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-            aria-controls="collapseFive">
-            Pour les entrepreneurs, managers, personnes en reconversion
-          </button>
-        </h5>
-      </div>
-      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-        <div class="card-body">
-          Vous posez votre demande, nous éclaircissons ensemble vos objectifs et les moyens de les atteindre.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingFive">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-            aria-controls="collapseFive">
-            Pour les entrepreneurs, managers, personnes en reconversion
-          </button>
-        </h5>
-      </div>
-      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-        <div class="card-body">
-          Vous posez votre demande, nous éclaircissons ensemble vos objectifs et les moyens de les atteindre.
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                Pour les entrepreneurs, managers, personnes en reconversion
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              Vous posez votre demande, nous éclaircissons ensemble vos objectifs et les moyens de les atteindre.
+            </div>
+          </div>
         </div>
       </div>
     </div>
