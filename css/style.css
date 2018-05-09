@@ -205,6 +205,11 @@ h3 {
     background-color: #e2e2e2;
 }
 
+#error {
+    display: none;
+    background-color: #ff00001f;
+}
+
 .back {
     text-decoration: none !important;
     color: #40224C;
@@ -371,9 +376,9 @@ input:focus~.bar:before, input:focus~.bar:after {
 /* ************ PAGE PDF ************ */
 
 .pdf {
-    margin-top: 75px;
+    /* margin-top: 75px; */
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .scroll-none {
