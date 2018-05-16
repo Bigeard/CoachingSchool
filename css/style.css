@@ -2,16 +2,16 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-image: url("../img/background.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: auto;
 }
 
 .btn {
     white-space: normal !important;
     word-wrap: break-word;
+}
+
+.plan {
+    margin: 100px auto 100px;
+    max-width: 1000px;
 }
 
 /* ************ NAVBAR ************ */
@@ -55,7 +55,7 @@ html, body {
     margin-top: 78px;
     border-radius: 50%;
     width: 170px;
-    border: 2px solid #ffffff;
+    border: 2px solid #36283B;
 }
 
 .name {
@@ -134,27 +134,26 @@ html, body {
 /* ************ QUI SUIS-JE ? ************ */
 
 h2 {
-    color: #40224C !important;
+    color: #36283B !important;
     font-weight: bold !important;
     text-align: center;
 }
 
 h3 {
     font-size: 20px !important;
+    font-weight: bold !important;
 }
 
-.jumbotron {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-    background-color: #f3f3f3 !important;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+.text {
+    margin: 35px;
 }
 
 /* ************ CONTACT ************ */
 
 .div1 {
     display: block;
+    max-width: 880px;
+    margin: auto;
 }
 
 .div2 {
@@ -186,21 +185,6 @@ h3 {
     border: none;
 }
 
-.button {
-    display: block !important;
-    margin: auto;
-    border-radius: 60px !important;
-    width: 50%;
-    color: #40224C !important;
-    border: 3px solid #40224C !important;
-    background-color: none !important;
-}
-
-.button:hover {
-    background-color: #40224C !important;
-    color: #ffffff !important;
-}
-
 .alert {
     background-color: #e2e2e2;
 }
@@ -212,7 +196,8 @@ h3 {
 
 .back {
     text-decoration: none !important;
-    color: #40224C;
+    color: #36283B;
+    margin: 10px;
 }
 
 .back:hover {
@@ -312,7 +297,7 @@ label {
 input:focus~label, input:valid~label {
     top: -20px;
     font-size: 14px;
-    color: #40224C;
+    color: #36283B;
 }
 
 /* BOTTOM BARS ================================= */
@@ -329,7 +314,7 @@ input:focus~label, input:valid~label {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #40224C;
+    background: #36283B;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -359,14 +344,14 @@ input:focus~.bar:before, input:focus~.bar:after {
     left: 0;
     pointer-events: none;
     opacity: 0.5;
-    color: #40224C !important;
+    color: #36283B !important;
 }
 
 /* Collapse -------------------------- */
 
 .card-header {
     text-align: center;
-    background-color: #40224C !important;
+    background-color: #36283B !important;
 }
 
 .btn-link {
@@ -401,7 +386,7 @@ input:focus~.bar:before, input:focus~.bar:after {
 .blanc {
     width: 500px;
     background-color: #ffffff;
-    color: #40224C;
+    color: #36283B;
     padding: 16px;
     text-align: center;
     text-decoration: none !important;
@@ -410,10 +395,11 @@ input:focus~.bar:before, input:focus~.bar:after {
     margin: auto;
     transition-duration: 0.4s;
     cursor: pointer;
+    transition: background 0.6s, color 0.5s;
 }
 
 .blanc:hover {
-    background-color: #40224C !important;
+    background-color: #36283B !important;
     color: #ffffff !important;
 }
 
@@ -424,11 +410,6 @@ input:focus~.bar:before, input:focus~.bar:after {
 /* ************ RESPONSIVE ************ */
 
 @media screen and (max-width: 768px) {
-    .jumbotron {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 15px;
-    }
     .long {
         white-space: normal;
         word-wrap: break-word;
@@ -441,4 +422,67 @@ input:focus~.bar:before, input:focus~.bar:after {
         text-align: center;
         line-height: 22px;
     }
+}
+
+.button-1 {
+    margin-top: 72px;
+    font-size: 20px;
+    height: 52px;
+    background: transparent;
+    border: 2px solid #36283B;
+    border-radius: 100px;
+    width: auto;
+    margin: auto;
+    display: inline-block;
+    padding: 0px 40px;
+    line-height: 48px;
+    margin: 0px 0px;
+    font-weight: 600;
+    color: #36283B;
+    cursor: pointer;
+    /* position: relative; */
+    letter-spacing: 0.1pt;
+    text-decoration: none !important;
+    /* text-shadow:; */
+    outline: none !important;
+    transition: padding 0.4s, background 0.4s, color 0.4s, box-shadow 0.8s;
+}
+
+.button-1:hover {
+    padding: 0px 50px;
+    background: #36283B;
+    color: #ffffff;
+    box-shadow: 0px 19px 39px -11px rgba(0, 0, 0, 0.33);
+}
+
+.ok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-more {
+    margin-bottom: 80px;
+}
+
+.icon-navbar {
+    margin: 0px 32px 0px 32px;
+    color: #36283B;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+.plan-plus {
+    margin-top: 170px;
+}
+
+.form-control {
+    transition: box-shadow 0.4s !important;
+}
+
+.form-control:focus {
+    box-shadow: 0px 19px 39px -11px rgba(0, 0, 0, 0.199) !important;
+    border: #36283B !important;
 }

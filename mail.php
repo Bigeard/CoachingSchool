@@ -1,12 +1,8 @@
 <?php
 
-ini_set( 'display_errors', 1 );
- 
-error_reporting( E_ALL );
-
 $from = "cronoses.b@gmail.com";
 
-$to = "robin.bigard@ynov.com";
+$to = "robin.bigeard@ynov.com";
 
 $subject = "Vérification PHP mail";
 
@@ -14,8 +10,12 @@ $message = "PHP mail marche";
 
 $headers = "From:" . $from;
 
-mail($to,$subject,$message, $headers);
+mail($to,$subject,$message,$headers);
 
-echo "L'email a été envoyé.";
+if(mail($to,$subject,$message,$headers)){
+    echo "envoyé";
+}else{
+    echo "erreur";
+}
 
 ?>

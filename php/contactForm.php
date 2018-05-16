@@ -1,5 +1,6 @@
 <?php
 
+header('Location: ../');
 
 if(isset($_POST['submit'])
 {
@@ -23,4 +24,6 @@ if(isset($_POST['submit'])
 
 	mail($mailTo, $objet, $txt, $headers);
 //    header("Location: contactFrom.php?mailsend");
+
+	header('Location: http://54.38.246.103/');
 }
